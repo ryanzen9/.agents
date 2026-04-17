@@ -1,0 +1,76 @@
+{
+  "version": 3,
+  "skills": {
+    "find-skills": {
+      "source": "vercel-labs/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/skills.git",
+      "skillPath": "skills/find-skills/SKILL.md",
+      "skillFolderHash": "3013fdeb8a11b10b1eb795ec3ae8bfca38f7c26d",
+      "installedAt": "2026-03-25T06:02:11.428Z",
+      "updatedAt": "2026-03-25T06:02:11.428Z"
+    },
+    "skill-optimizer": {
+      "source": "mcollina/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/mcollina/skills.git",
+      "skillPath": "skills/skill-optimizer/SKILL.md",
+      "skillFolderHash": "f364a6308b43f83c8979542ab527220239761c66",
+      "installedAt": "2026-03-25T08:31:31.821Z",
+      "updatedAt": "2026-03-25T08:31:31.821Z"
+    },
+    "blog-format-check": {
+      "source": "ryanzen9/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/ryanzen9/skills.git",
+      "skillPath": "blog-format-check/SKILL.md",
+      "skillFolderHash": "52259acc003612620726028ac5900c98f8f37eb3",
+      "installedAt": "2026-04-17T06:23:11.086Z",
+      "updatedAt": "2026-04-17T06:23:11.086Z"
+    },
+    "api-conventions": {
+      "source": "ryanzen9/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/ryanzen9/skills.git",
+      "skillPath": "api-conventions/SKILL.md",
+      "skillFolderHash": "946dfca8d60b2bb8df4efc341c90de75779f8e9d",
+      "installedAt": "2026-04-17T06:23:11.628Z",
+      "updatedAt": "2026-04-17T06:23:11.628Z"
+    },
+    "code-style-review": {
+      "source": "ryanzen9/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/ryanzen9/skills.git",
+      "skillPath": "code-style-review/SKILL.md",
+      "skillFolderHash": "b37d072bb6b053141142ba279320be36a7bc0a13",
+      "installedAt": "2026-04-17T06:23:12.144Z",
+      "updatedAt": "2026-04-17T06:23:12.144Z"
+    },
+    "explain-code": {
+      "source": "ryanzen9/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/ryanzen9/skills.git",
+      "skillPath": "explain-code/SKILL.md",
+      "skillFolderHash": "ab63e2b07ea13fd26d046e18e0393f203f06392a",
+      "installedAt": "2026-04-17T06:23:12.686Z",
+      "updatedAt": "2026-04-17T06:23:12.686Z"
+    }
+  },
+  "dismissed": {
+    "findSkillsPrompt": true
+  },
+  "lastSelectedAgents": [
+    "amp",
+    "antigravity",
+    "cline",
+    "codex",
+    "cursor",
+    "deepagents",
+    "gemini-cli",
+    "github-copilot",
+    "kimi-cli",
+    "opencode",
+    "warp",
+    "claude-code"
+  ]
+}
