@@ -6,18 +6,52 @@ argument-hint: target
 
 # Code Style Review
 
-A skill for reviewing code, providing feedback on code quality, and suggesting improvements. Use when asked to review code or provide feedback on code quality.
+Review code for quality, consistency, and maintainability. Produce a structured, actionable report.
 
-## First Before:
+## Workflow
 
-Unless the user explicitly specifies `target`, prioritize using `git`-related commands to inspect the modified code and its context before performing a code review.
+1. **Detect scope** — If the user provides a `target` (file/dir), use that. Otherwise run `git diff --name-only` (staged + unstaged) to discover changed files.
+2. **Load rules** — Rules in `./rules/` use `paths` frontmatter to declare which file patterns they apply to. Only load rules whose `paths` match the files being reviewed. This keeps context minimal.
+3. **Apply principles** — Always consider the general coding principles in `./references/code-principles.md`.
+4. **Review each file** — For each file in scope, check against the loaded rules and principles. Read enough surrounding context (±50 lines) to understand intent.
+5. **Produce report** — Output findings using the report template below.
 
-## When reviewing code, always consider the following principles :
+## Report Template
 
-`./references/code-principles.md`
+### Summary
 
-When providing feedback, be specific and constructive. Point out specific lines of code or sections that could be improved, and explain why. Offer suggestions for how to improve the code, rather than just pointing out what's wrong. Always be respectful and considerate in your feedback, and remember that the goal is to help the author improve their code, not to criticize them personally.
+> One-paragraph overall assessment. State the most important thing the author should address.
 
-## Rules for code review:
+### Findings
+
+| # | Severity | File | Line(s) | Issue | Suggestion |
+|---|----------|------|----------|-------|------------|
+| 1 | 🔴 Critical | `src/auth.ts` | 42-45 | Unchecked null access on `user.profile` | Use optional chaining: `user?.profile` |
+| 2 | 🟡 Warning | `src/api.ts` | 18 | Duplicated error handling logic | Extract to shared `handleApiError()` |
+| 3 | 🔵 Suggestion | `src/utils.ts` | 7 | Magic number `86400` | Use named constant `SECONDS_PER_DAY` |
+
+### Severity Guide
+
+- **🔴 Critical** — Bugs, security issues, data loss risks. Must fix before merge.
+- **🟡 Warning** — Code smells, maintainability issues, violated conventions. Should fix.
+- **🔵 Suggestion** — Style improvements, readability, minor optimizations. Nice to have.
+
+### Stats
+
+```
+Files reviewed: N
+Critical: N | Warning: N | Suggestion: N
+```
+
+## Feedback Style
+
+- Be specific: point to exact lines and explain **why** it's a problem.
+- Be constructive: always offer a concrete fix or alternative.
+- Be respectful: the goal is to help the author improve, not to criticize.
+- Prioritize: list Critical issues first, then Warning, then Suggestion.
+
+## Rules
+
+Rules are loaded from `./rules/` based on file type matching. Each rule file declares which file patterns it applies to via `paths` frontmatter. This ensures only relevant rules are loaded, saving context tokens.
 
 `./rules`

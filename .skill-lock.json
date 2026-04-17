@@ -10,15 +10,6 @@
       "installedAt": "2026-03-25T06:02:11.428Z",
       "updatedAt": "2026-03-25T06:02:11.428Z"
     },
-    "skill-optimizer": {
-      "source": "mcollina/skills",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/mcollina/skills.git",
-      "skillPath": "skills/skill-optimizer/SKILL.md",
-      "skillFolderHash": "f364a6308b43f83c8979542ab527220239761c66",
-      "installedAt": "2026-03-25T08:31:31.821Z",
-      "updatedAt": "2026-03-25T08:31:31.821Z"
-    },
     "blog-format-check": {
       "source": "ryanzen9/skills",
       "sourceType": "github",
