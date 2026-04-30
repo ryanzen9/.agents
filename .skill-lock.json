@@ -19,24 +19,6 @@
       "installedAt": "2026-04-17T06:23:11.086Z",
       "updatedAt": "2026-04-17T06:23:11.086Z"
     },
-    "api-conventions": {
-      "source": "ryanzen9/skills",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/ryanzen9/skills.git",
-      "skillPath": "api-conventions/SKILL.md",
-      "skillFolderHash": "946dfca8d60b2bb8df4efc341c90de75779f8e9d",
-      "installedAt": "2026-04-17T06:23:11.628Z",
-      "updatedAt": "2026-04-17T06:23:11.628Z"
-    },
-    "code-style-review": {
-      "source": "ryanzen9/skills",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/ryanzen9/skills.git",
-      "skillPath": "code-style-review/SKILL.md",
-      "skillFolderHash": "b37d072bb6b053141142ba279320be36a7bc0a13",
-      "installedAt": "2026-04-17T06:23:12.144Z",
-      "updatedAt": "2026-04-17T06:23:12.144Z"
-    },
     "explain-code": {
       "source": "ryanzen9/skills",
       "sourceType": "github",
